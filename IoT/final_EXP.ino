@@ -6,8 +6,8 @@
 
 #define FIREBASE_HOST "rtbms-dev-001.firebaseio.com"
 #define AUTH_KEY "R6MghWkhMq98IbowRWOxiHI2xiKfyDoye9On8Exx"
-#define WIFI_SSID "Alpha" // Change the name of your WIFI
-#define WIFI_PASSWORD "1234567899" // Change the password of your WIFI
+#define WIFI_SSID "Enter_Your_SSID" // Change the name of your WIFI
+#define WIFI_PASSWORD "Enter_Your_Password" // Change the password of your WIFI
 
 
 //creating mfrc522 instance
