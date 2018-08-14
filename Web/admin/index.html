@@ -1,0 +1,510 @@
+﻿<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="A front-end template that helps you build fast, modern mobile web apps.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>RTBMS</title>
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" sizes="192x192" href="images/rtbms-logo.png">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="RTBMS">
+    <link rel="apple-touch-icon-precomposed" href="images/rtbms-logo.png">
+
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
+    <meta name="msapplication-TileColor" content="#df3333">
+
+    <link rel="shortcut icon" href="images/rtbms-logo.png">
+
+    <!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
+    <!--
+    <link rel="canonical" href="http://www.example.com/">
+    -->
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.red-deep_purple.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <!-- StyleSheet for dialog box -->
+    <link rel="stylesheet" type="text/css" href="dialog-polyfill.css" />
+    <script src="dialog-polyfill.js"></script>
+    <script src="jquery.js"></script>
+    <script src="state.js"></script>
+    
+  </head>
+
+  <body>
+    <!--================================= Login Dialog Box===================================================-->
+    <dialog id="loginDialog" class="mdl-dialog">
+        <h4 class="mdl-dialog__title">Sign In</h4>
+        <div class="mdl-dialog__content">
+            <p id="loginError">Error</p>
+            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                <input class="mdl-textfield__input" type="email" id="loginEmail">
+                <label class="mdl-textfield__label" for="abc@xyz.com">Email...</label>
+            </div>
+            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                <input class="mdl-textfield__input" type="password" id="loginPassword">
+                <label class="mdl-textfield__label" for="******">Password...</label>
+            </div>
+        </div>
+        <div class="mdl-dialog__actions">
+            <!-- Colored raised button -->
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--raised mdl-button--colored" id="loginButton">
+                Sign In
+            </button>
+            <div id="loginProgress" class="mdl-spinner mdl-js-spinner is-active"></div>
+        </div>
+    </dialog>
+
+    <!-- Login Section -->
+    <div class="login-cover" style="background:url('images/bkg.jpg');background-size:cover;">
+        <!-- MDL Spinner Component -->
+        <div class="mdl-spinner mdl-js-spinner is-active"></div>
+    </div>
+
+    <div class="demo-layout mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header">
+      <header class="demo-header mdl-layout__header mdl-color--red-800 mdl-color-text--red-50">
+        <div class="mdl-layout__header-row">
+          <span class="mdl-layout-title">Home</span>
+          <div class="mdl-layout-spacer"></div>
+          <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable">
+            <label class="mdl-button mdl-js-button mdl-button--icon" for="search">
+              <i class="material-icons">search</i>
+            </label>
+            <div class="mdl-textfield__expandable-holder">
+              <input class="mdl-textfield__input" type="text" id="search">
+              <label class="mdl-textfield__label" for="search">Enter your query...</label>
+            </div>
+          </div>
+          <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" id="hdrbtn">
+            <i class="material-icons">more_vert</i>
+          </button>
+          <ul class="mdl-menu mdl-js-menu mdl-js-ripple-effect mdl-menu--bottom-right" for="hdrbtn">
+            <li class="mdl-menu__item">About</li>
+            <li class="mdl-menu__item">Contact</li>
+          </ul>
+        </div>
+      </header>
+      <div class="demo-drawer mdl-layout__drawer mdl-color--red-900 mdl-color-text--red-50">
+        <header class="demo-drawer-header">
+          <h4>RTBMS</h4><span>Admin Dashboard</span>
+          <div class="demo-avatar-dropdown" >
+            <span id="userEmail"></span>
+            <div class="mdl-layout-spacer"></div>
+            <button id="accbtn" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+              <i class="material-icons" role="presentation">arrow_drop_down</i>
+              <span class="visuallyhidden">Accounts</span>
+            </button>
+            <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="accbtn">
+              <li class="mdl-menu__item" id="signOutButton">Sign Out</li>
+            </ul>
+          </div>
+        </header>
+        <nav class="demo-navigation mdl-navigation mdl-color--red-800">
+          <a class="mdl-navigation__link" href=""><i class="mdl-color-text--red-400 material-icons" role="presentation">home</i>Home</a>
+          <a class="mdl-navigation__link" href="#add-new-hospital" onclick="showNewHospital()"><i class="mdl-color-text--red-400 material-icons" role="presentation">person_add</i>Add New Hospital</a>
+          <a class="mdl-navigation__link" href="#view-hospitals" onclick="viewHospitals()"><i class="mdl-color-text--red-400 material-icons" role="presentation">list</i>View All</a>
+          <a class="mdl-navigation__link" href="#notifyUsers" onclick="notifyUsers()"><i class="mdl-color-text--red-400 material-icons" role="presentation">notifications_active</i>Event Notifications</a>
+          <a class="mdl-navigation__link" href="#add-updates" onclick="addUpdates()"><i class="mdl-color-text--red-400 material-icons" role="presentation">forum</i>Update Newsfeed</a>
+        </nav>
+      </div>
+
+      <!-- =================================== Main Layout =================================== -->
+      <main class="mdl-layout__content mdl-color--grey-100">
+        
+        <!--======================================== First Division Home ===================================== -->
+        <div class="mdl-grid demo-content" id="home">
+          <div class="mdl-color--red-50 mdl-shadow--2dp mdl-cell mdl-cell--12-col mdl-grid" style="padding:0;margin:0;">
+            <!-- Column1 -->
+            <div class="mdl-cell mdl-cell--3-col" style="height:310px;display:block;">
+              <div class="mdl-layout" style="background:#ffffff;width:225px;display:flex;justify-content:center;box-shadow:0 4px 4px 0 #586055;border-radius:5px;">
+                  <img src="images/state.png" style="height:200px;width:95%;left:1%;position:relative;">
+                  <p class="mdl-layout" id="stateCount" style="text-align:center;font-size:30px;color:#5cb85c;padding-top:10px;margin:0;">
+                  </p>                            
+                  <p class="mdl-layout" style="background:#5cb85c;padding:0;margin:0;padding-top:4px;vertical-align:true;">
+                      <a class="mdl-navigation__link" style="text-align:center;font-size:20px;font-weight:bold;color:#ffffff;" href="#view-StateData" onclick="viewStateData()">States &amp; Union Territories</a>
+                  </p>
+              </div>
+              </div>
+              <!-- Column 2 -->
+              <div class="mdl-cell mdl-cell--3-col">
+                  <div class="mdl-layout" style="background:#ffffff;width:225px;display:flex;justify-content:center;box-shadow:0 4px 4px 0 #586055;border-radius:5px;">
+                      <img src="images/city.png" style="height:200px;width:95%;left:1%;position:relative;">
+                      <p class="mdl-layout" id="cityCount" style="text-align:center;font-size:30px;color:#4CB1CF;padding-top:10px;margin:0;">
+                      </p>
+                      <p class="mdl-layout" style="text-align:center;font-size:20px;font-weight:bold;color:#ffffff;background:#4CB1CF;padding:0;margin:0;padding-top:4px;vertical-align:true;">
+                              <a class="mdl-navigation__link" style="text-align:center;font-size:20px;font-weight:bold;color:#ffffff;" href="#view-CityData" onclick="viewCityData()">Cities</a>
+                      </p>
+                  </div>
+              </div>
+              <!-- Column 3 -->
+              <div class="mdl-cell mdl-cell--3-col">
+                  <div class="mdl-layout" style="background:#ffffff;width:225px;display:flex;justify-content:center;box-shadow:0 4px 4px 0 #586055;border-radius:5px;">
+                      <img src="images/bloodbank.png" style="height:200px;width:95%;left:1%;position: relative;;">
+                      <p class="mdl-layout" id="totalBloodUnits" style="text-align:center;font-size:30px;color:#F0433D;padding-top:10px;margin:0;">
+                      </p>
+                      <p class="mdl-layout" style="text-align:center;font-size:20px;font-weight:bold;color:#ffffff;background:#F0433D;padding:0;margin:0;padding-top:4px;vertical-align:true;">
+                        <a class="mdl-navigation__link" style="text-align:center;font-size:20px;font-weight:bold;color:#ffffff;" href="#view-BloodData" onclick="viewBloodData()">Total Blood Units</a>
+                      </p>
+                  </div>
+              </div>
+              <!-- Column 4 -->
+              <div class="mdl-cell mdl-cell--3-col">
+                  <div class="mdl-layout" style="background:#ffffff;width:225px;display:flex;justify-content:center;box-shadow:0 4px 4px 0 #586055;border-radius:5px;">
+                      <img src="images/hospital.png" style="height:200px;width:95%;left:1%;position: relative;;">
+                      <p class="mdl-layout" id="hospitalCount" style="text-align:center;font-size:30px;color:#f0ad4e;padding-top:10px;margin:0;">
+                      </p>
+                      <p class="mdl-layout" style="text-align:center;font-size:20px;font-weight:bold;color:#ffffff;background:#f0ad4e;padding:0;margin:0;padding-top:4px;vertical-align:true;">
+                          Hospitals
+                      </p>
+                  </div>
+              </div>
+          </div>
+        </div>
+
+        <!--==================================== View State Wise Detail ============================================ -->
+        <div id="view-StateData" style="display:none;overflow:auto;text-align:center;padding:0;">
+          <table class="mdl-data-table mdl-js-data-table mdl-shadow--2dp" style="text-align:center;margin-left:200px;">
+              <thead>
+                <h4 style="font-weight:bold;">State Wise: Total Blood Units</h4>
+                  <tr>
+                      <th class="mdl-data-table__cell--non-numeric">State</th>
+                      <th>O+</th>
+                      <th>O-</th>
+                      <th>A+</th>
+                      <th>A-</th>
+                      <th>B+</th>
+                      <th>B-</th>
+                      <th>AB+</th>
+                      <th>AB-</th>
+                  </tr>
+              </thead>
+              <tbody id="stateData">
+              </tbody>
+            </table>
+        </div>
+
+        <!--==================================== View City Wise Detail ============================================ -->
+        <div id="view-CityData" style="display:none;overflow:auto;text-align:center;padding:0;">
+            <table class="mdl-data-table mdl-js-data-table mdl-shadow--2dp" style="text-align:center;margin-left:200px;">
+                <thead>
+                  <h4 style="font-weight:bold;">City Wise: Total Blood Units</h4>
+                    <tr>
+                        <th class="mdl-data-table__cell--non-numeric">City</th>
+                        <th>O+</th>
+                        <th>O-</th>
+                        <th>A+</th>
+                        <th>A-</th>
+                        <th>B+</th>
+                        <th>B-</th>
+                        <th>AB+</th>
+                        <th>AB-</th>
+                    </tr>
+                </thead>
+                <tbody id="cityData">
+                </tbody>
+              </table>
+          </div>
+
+          <!-- ================================== View BloodGroup Wise Details ======================================-->
+          <div id="view-BloodData" style="display:none;overflow:auto;text-align:center;padding:0;margin-left:400px;float:center;">
+            <table class="mdl-data-table mdl-js-data-table mdl-shadow--2dp" style="text-align:center;margin-left:200px;">
+                <thead>
+                  <h4 style="font-weight:bold;">Blood Groups &amp; Total Blood Units</h4>
+                    <tr>
+                        <th class="mdl-data-table__cell--non-numeric">O+</th>
+                        <th>O-</th>
+                        <th>A+</th>
+                        <th>A-</th>
+                        <th>B+</th>
+                        <th>B-</th>
+                        <th>AB+</th>
+                        <th>AB-</th>
+                    </tr>
+                </thead>
+                <tbody id="bloodData">
+                </tbody>
+              </table>
+          </div>
+
+        <!-- ======================================== Add New Hospital ======================================== -->
+        <div id="add-new-hospital" style="display:none;overflow-y:auto;" class="demo-layout mdl-color--red-50 mdl-shadow--2dp mdl-layout__container">
+            <img src="images/addh.png" alt="add_new_user" align="right" style="padding-right:300px;padding-top:100px;height:400px;width:400px;"
+            />
+            <h4 class="mdl-layout__title" style="padding:0;">Add A New Hospital</h4>
+            <div class="mdl-layout__content">
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                    <input class="mdl-textfield__input" type="text" id="signUpName">
+                    <label class="mdl-textfield__label" for="Ivy Hospital">Hospital Name...</label>
+                </div>
+                <br/>
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                  <input class="mdl-textfield__input" type="email" id="signUpEmail">
+                  <label class="mdl-textfield__label" for="abc@xyz.com">Email...</label>
+                </div>
+                <br/>
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                  <input class="mdl-textfield__input" type="password" id="signUpPassword">
+                  <label class="mdl-textfield__label" for="******">Password...</label>
+                </div>
+                <br/>
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                  <input class="mdl-textfield__input" type="text" id="signUpAddress">
+                  <label class="mdl-textfield__label" for="3376, Lakhnaur Pind Road, Sector 71, Sahibzada Ajit Singh Nagar">Address...</label>
+                </div>
+                <br/>
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">  
+                  <select class="mdl-textfield__input" id="signUpState" onchange='selct_district(this.value)'>
+                  </select>
+                  <label class="mdl-textfield__label" for="Punjab">State...</label>
+                </div>
+                <br/>
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                  <select class="mdl-textfield__input" id="signUpCity">
+                  </select>
+                  <label class="mdl-textfield__label" for="City">City...</label>
+                </div>
+                <br/>
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                  <!-- <select class="mdl-textfield__input" id="signUpPincode">
+                    <option value="" selected="selected"></option>
+                  </select> -->
+                  <input class="mdl-textfield__input" type="text" id="signUpPincode" for="147001">
+                  <label class="mdl-textfield__label" for="147001">Pincode...</label>
+                </div>
+                <br/>
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                  <input class="mdl-textfield__input" type="number" id="signUpPhone">
+                  <label class="mdl-textfield__label" for="8188547896">Phone Number...</label>
+                </div>
+                <br/>
+                <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--raised mdl-button--colored" id="signUpButton">
+                  Add Hospital
+                </button>     
+                <br/>
+                <br/>       
+              </div>  
+            </div>
+            <!-- MDL Spinner Component -->
+            <div id="signUpProgress" class="mdl-spinner mdl-js-spinner is-active"></div>
+            </div>      
+        <!-- Sign Up Success Dialog-->
+        <dialog id="signUpSuccessDialog" class="mdl-dialog" style="margin-left:30%;margin-top:10%;">
+            <p id="signUpError">Error</p>
+            <h4 class="mdl-dialog__title">Hospital Added Successfully</h4>
+            <div class="mdl-dialog__actions">
+                <!-- Colored raised button -->
+                <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--raised mdl-button--colored" id="okButton">
+                    Ok
+                </button>
+            </div>
+        </dialog>
+
+        <!--==================================== View All Hospitals ============================================ -->
+        <div id="view-hospitals" style="display:none;overflow-y: auto;" class="mdl-layout__content mdl-color--red-50">
+            <table class="mdl-data-table mdl-js-data-table mdl-shadow--2dp">
+                <thead>
+                  <h4 style="font-weight:bold;text-align:center;">Hospital Wise : Blood Count</h4>
+                    <tr>
+                        <th class="mdl-data-table__cell--non-numeric" style="font-weight:bold;">Hospital ID</th>
+                        <th>Hospital Name</th>
+                        <th>District</th>
+                        <th>O+</th>
+                        <th>O-</th>
+                        <th>A+</th>
+                        <th>A-</th>
+                        <th>B+</th>
+                        <th>B-</th>
+                        <th>AB+</th>
+                        <th>AB-</th>
+                    </tr>
+                </thead>
+                <tbody id="userInfo">
+                </tbody>
+            </table>
+        </div>
+
+        <!--======================= Event Notification for all users as per their location============================= -->
+        <div id="notifyUsers" style="display:none;" class="mdl-layout__content mdl-color--red-50">
+          <h4 class="mdl-layout__title">Add a New Event</h4><br/>
+            <div class="mdl-layout__content">
+              <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                <input class="mdl-textfield__input" type="text" id="eventName">
+                <label class="mdl-textfield__label" for="Blood Donation Camp">Event Name...</label>
+              </div><br/>
+              <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                <input class="mdl-textfield__input" type="date" id="eventDate" max="2050-12-31">
+                <label class="mdl-textfield__label" for="July 16, 2018">Date...</label>
+              </div><br/>
+              <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                <input class="mdl-textfield__input" type="time" id="eventTime" min="06:00 AM" max="11:59 PM">
+                <label class="mdl-textfield__label" for="11:00 AM">Time...</label>
+              </div><br/>
+              <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                <input class="mdl-textfield__input" type="text" id="eventVenue">
+                <label class="mdl-textfield__label" for="ShantiNiketan, Chinar Bagh, Delhi">Venue...</label>
+              </div><br/>
+              <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                <input class="mdl-textfield__input" type="text" id="eventState">
+                <label class="mdl-textfield__label" for="Punjab">State...</label>
+              </div><br/>
+              <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                <input class="mdl-textfield__input" type="number" id="eventPincode" max="9999999" >
+                <label class="mdl-textfield__label" for="147001">City Pincode...</label>
+              </div><br/><br/>
+              <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--raised mdl-button--colored" id="notifyButton">
+                Add New Event
+              </button>
+              <!-- MDL Spinner Component -->
+              <div id="notifyUsersProgress" class="mdl-spinner mdl-js-spinner is-active"></div>
+            </div>
+            <!-- ==================================== View All Events ============================================ -->
+            <div class="mdl-layout__container mdl-color--white" style="display:inline;margin-left:50px;padding:20px;height:auto;padding-top:10px;border-radius:5px;width:auto;">
+              <div class="mdl-layout__content" align="center">
+                  <table class="mdl-data-table mdl-js-data-table mdl-shadow--2dp">
+                      <thead> <h4 style="font-weight:bold;">Detailed Event Summary </h4>
+                          <tr>
+                              <th class="mdl-data-table__cell--non-numeric" style="font-weight:bold;">Event Name</th>
+                              <th>Date</th>
+                              <th>Time</th>
+                              <th>Venue</th>
+                              <th>Actions</th>
+                          </tr>
+                      </thead>
+                      <tbody id="viewAllEvents">
+                      </tbody>
+                  </table>
+              </div>
+            </div>
+          </div>    
+          <!-- Edit Event -->
+          <dialog id="editEvent" class="mdl-dialog" style="margin-left:30%;margin-top:10%;">
+            <div class="mdl-dialog__content">
+              <p id="editEventError">Error</p>
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                  <input class="mdl-textfield__input" type="text" id="eventName">
+                  <label class="mdl-textfield__label" for="Awareness Camp">Name...</label>
+                </div>
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                  <input class="mdl-textfield__input" type="date" id="eventDate">
+                  <label class="mdl-textfield__label" for="2018-07-31">Date...</label>
+                </div>
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                  <input class="mdl-textfield__input" type="time" id="eventTime">
+                 <label class="mdl-textfield__label" for="11:00 AM">Time...</label>
+                </div>
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                  <input class="mdl-textfield__input" type="text" id="eventVenue">
+                  <label class="mdl-textfield__label" for="Ivy Hospital">Venue...</label>
+                </div>
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                  <input class="mdl-textfield__input" type="text" id="eventState">
+                  <label class="mdl-textfield__label" for="Punjab">State...</label>
+                </div>
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                  <input class="mdl-textfield__input" type="number" id="eventPincode">
+                  <label class="mdl-textfield__label" for="141002">Pincode...</label>
+                </div>
+            </div>
+            <div class="mdl-dialog__actions">
+              <!-- Colored raised button -->
+              <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--raised mdl-button--colored" id="notificationOkButton">
+                Update Event
+              </button>
+            </div>
+          </dialog>
+          <!-- New Event Added Success Dialog -->
+          <dialog id="notifyUsersSuccessDialog" class="mdl-dialog" style="margin-left:30%;margin-top:10%;">
+            <p id="notifyUsersError">Error</p>
+            <h4 class="mdl-dialog__title">New Event Added Successfully</h4>
+            <div class="mdl-dialog__actions">
+            <!-- Colored raised button -->
+              <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--raised mdl-button--colored" id="notificationOkButton">
+                Ok
+              </button>
+            </div>
+          </dialog>
+
+    <!--=================================== Add updates for newsfeed ==================================================-->
+          <div id="add-updates" style="display:none;" class="mdl-color--red-50 mdl-layout__content">
+            <h4 class="mdl-layout__title">Add a new update</h4><br/>
+            <div class="mdl-layout__content">
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                    <input class="mdl-textfield__input" type="text" id="newsHeading">
+                    <label class="mdl-textfield__label" for="Gene Therapy may reduce the need for blood transfusion">Heading...</label>
+                </div><br/><br/>
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                    <textarea class="mdl-textfield__input" type="text" rows="5" id="newsDescription"></textarea>
+                    <label class="mdl-textfield__label" for="Each year, about 5 million Americans undergo a blood transfusion.">Description...</label>
+                </div><br/><br/>
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label" required>
+                    <input class="mdl-textfield__input" type="file" id="newsImage">
+                    <label class="mdl-textfield__label">Image...</label>
+                </div><br/><br/><br/>
+                <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--raised mdl-button--colored" id="newsUpdateButton">
+                    Add News
+                </button>          
+                <!-- MDL Spinner Component -->
+                <div id="newsUpdateProgress" class="mdl-spinner mdl-js-spinner is-active"></div>
+              </div>
+              <div class="mdl-layout__container mdl-color--white" style="display:inline;margin-left:50px;padding:20px;height:auto;padding-top:10px;border-radius:5px;width:auto;">
+                <div class="mdl-layout__content" align="center">
+                    <table class="mdl-data-table mdl-js-data-table mdl-shadow--2dp">
+                        <thead> <h4 style="font-weight:bold;">Detailed Newsfeed </h4>
+                            <tr>
+                                <th class="mdl-data-table__cell--non-numeric" style="font-weight:bold;overflow-wrap: :break-word;">Heading</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody id="viewAllNews">
+                        </tbody>
+                    </table>
+                </div>
+              </div> 
+          </div>    
+        <!-- Update Newsfeed Success Dialog -->
+        <dialog id="newsUpdateSuccessDialog" class="mdl-dialog" style="margin-left:30%;margin-top:10%;">
+            <p id="newsUpdateError">Error</p>
+            <h4 class="mdl-dialog__title">News Updated Successfully</h4>
+            <div class="mdl-dialog__actions">
+                <!-- Colored raised button -->
+                <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--raised mdl-button--colored" id="okButtonNewsfeed">
+                    Ok
+                </button>
+            </div>
+        </dialog>
+        <!-- ==================================== View All Events ============================================ -->
+        
+      </main>
+    </div>
+      
+    <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <!-- ==========================================Firebase app==================================================== -->
+    <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyB2arUj1WkeC7Z4becMeWXlD9F5jekODgU",
+            authDomain: "rtbms-dev-001.firebaseapp.com",
+            databaseURL: "https://rtbms-dev-001.firebaseio.com",
+            projectId: "rtbms-dev-001",
+            storageBucket: "rtbms-dev-001.appspot.com",
+            messagingSenderId: "140966400062"
+        };
+        firebase.initializeApp(config);
+    </script>
+
+    <!-- =============================jQuery========================================= -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>/
+  </body>
+</html>
