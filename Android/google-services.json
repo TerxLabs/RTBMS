@@ -1,0 +1,107 @@
+{
+  "project_info": {
+    "project_number": "140966400062",
+    "firebase_url": "https://rtbms-dev-001.firebaseio.com",
+    "project_id": "rtbms-dev-001",
+    "storage_bucket": "rtbms-dev-001.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:140966400062:android:ba13040e3006b8dd",
+        "android_client_info": {
+          "package_name": "in.terxlabs.rtbms_dev"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "140966400062-sc6q2bic6roc2bmktcdf5kn1hvnpf595.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "in.terxlabs.rtbms_dev",
+            "certificate_hash": "907f66caaa71b6a977255e13604d208e80068867"
+          }
+        },
+        {
+          "client_id": "140966400062-ne7cpfubt09670k75r4kn9vgms0hho6o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBPcmYW7T0Mj8VbSmMXIR6JRfj68UcUPAM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "140966400062-ne7cpfubt09670k75r4kn9vgms0hho6o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:140966400062:android:890dce24706c4602",
+        "android_client_info": {
+          "package_name": "rtbms.terxlabs.com"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "140966400062-t6ilu7hmurqsmq5bh8qes1injs6gatra.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "rtbms.terxlabs.com",
+            "certificate_hash": "d8bd69c6bd1f75611ae29f62aebe8b268d7802dc"
+          }
+        },
+        {
+          "client_id": "140966400062-9sspra8t0av8cl41798fqfpprmv3i4qa.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "rtbms.terxlabs.com",
+            "certificate_hash": "e4f407a2e866ef44af773fe2c3b626f6e75fa243"
+          }
+        },
+        {
+          "client_id": "140966400062-ne7cpfubt09670k75r4kn9vgms0hho6o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBPcmYW7T0Mj8VbSmMXIR6JRfj68UcUPAM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "140966400062-ne7cpfubt09670k75r4kn9vgms0hho6o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
