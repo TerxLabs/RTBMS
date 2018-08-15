@@ -1,0 +1,274 @@
+# Referenced at D:\RTBMS 16-june\RTBMS\app\src\main\res\layout\activity_hospital_result_notfound.xml:2
+# Referenced at D:\RTBMS 16-june\RTBMS\app\src\main\res\layout\activity_phone_otp_success.xml:2
+# Referenced at D:\RTBMS 16-june\RTBMS\app\src\main\res\layout\activity_science.xml:2
+# Referenced at D:\RTBMS 16-june\RTBMS\app\src\main\res\layout\activity_signwithgoogle.xml:2
+-keep class android.support.constraint.ConstraintLayout { <init>(...); }
+
+# Referenced at C:\Users\sahil\.gradle\caches\transforms-1\files-1.1\design-27.1.1.aar\f97fcbf4ecf0602200db3c4d3a2f590a\res\layout\design_bottom_navigation_item.xml:26
+-keep class android.support.design.internal.BaselineLayout { <init>(...); }
+
+# Referenced at C:\Users\sahil\.gradle\caches\transforms-1\files-1.1\design-27.1.1.aar\f97fcbf4ecf0602200db3c4d3a2f590a\res\layout\design_navigation_item.xml:17
+-keep class android.support.design.internal.NavigationMenuItemView { <init>(...); }
+
+# Referenced at C:\Users\sahil\.gradle\caches\transforms-1\files-1.1\design-27.1.1.aar\f97fcbf4ecf0602200db3c4d3a2f590a\res\layout\design_navigation_menu.xml:17
+-keep class android.support.design.internal.NavigationMenuView { <init>(...); }
+
+# Referenced at C:\Users\sahil\.gradle\caches\transforms-1\files-1.1\design-27.1.1.aar\f97fcbf4ecf0602200db3c4d3a2f590a\res\layout\design_layout_snackbar_include.xml:18
+-keep class android.support.design.internal.SnackbarContentLayout { <init>(...); }
+
+# Referenced at C:\Users\sahil\.gradle\caches\transforms-1\files-1.1\design-27.1.1.aar\f97fcbf4ecf0602200db3c4d3a2f590a\res\layout\design_text_input_password_icon.xml:18
+-keep class android.support.design.widget.CheckableImageButton { <init>(...); }
+
+# Referenced at C:\Users\sahil\.gradle\caches\transforms-1\files-1.1\design-27.1.1.aar\f97fcbf4ecf0602200db3c4d3a2f590a\res\layout\design_bottom_sheet_dialog.xml:26
+# Referenced at D:\RTBMS 16-june\RTBMS\app\src\main\res\layout\activity_signup_user_details.xml:2
+-keep class android.support.design.widget.CoordinatorLayout { <init>(...); }
+
+# Referenced at C:\Users\sahil\.gradle\caches\transforms-1\files-1.1\design-27.1.1.aar\f97fcbf4ecf0602200db3c4d3a2f590a\res\layout-sw600dp-v13\design_layout_snackbar.xml:18
+# Referenced at C:\Users\sahil\.gradle\caches\transforms-1\files-1.1\design-27.1.1.aar\f97fcbf4ecf0602200db3c4d3a2f590a\res\layout\design_layout_snackbar.xml:18
+-keep class android.support.design.widget.Snackbar$SnackbarLayout { <init>(...); }
+
+# Referenced at D:\RTBMS 16-june\RTBMS\app\src\main\res\layout\activity_signup_user_details.xml:28
+# Referenced at D:\RTBMS 16-june\RTBMS\app\src\main\res\layout\activity_signup_user_details.xml:45
+# Referenced at D:\RTBMS 16-june\RTBMS\app\src\main\res\layout\activity_signup_user_details.xml:64
+# Referenced at D:\RTBMS 16-june\RTBMS\app\src\main\res\layout\activity_signup_user_details.xml:93
+# Referenced at D:\RTBMS 16-june\RTBMS\app\src\main\res\layout\activity_signup_user_details.xml:162
+-keep class android.support.design.widget.TextInputLayout { <init>(...); }
+
+# Referenced at D:\RTBMS 16-june\RTBMS\app\build\intermediates\manifests\full\release\AndroidManifest.xml:33
+-keep class android.support.multidex.MultiDexApplication { <init>(...); }
+
+# Referenced at D:\RTBMS 16-june\RTBMS\app\src\main\res\layout\activity_welcome.xml:9
+-keep class android.support.v4.view.ViewPager { <init>(...); }
+
+# Referenced at C:\Users\sahil\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\86f502375d99052a9ca39bf1707048ef\res\layout\abc_alert_dialog_material.xml:41
+-keep class android.support.v4.widget.NestedScrollView { <init>(...); }
+
+# Referenced at C:\Users\sahil\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\86f502375d99052a9ca39bf1707048ef\res\layout\abc_select_dialog_material.xml:23
+-keep class android.support.v7.app.AlertController$RecycleListView { <init>(...); }
+
+# Referenced at C:\Users\sahil\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\86f502375d99052a9ca39bf1707048ef\res\layout\abc_action_menu_item_layout.xml:17
+-keep class android.support.v7.view.menu.ActionMenuItemView { <init>(...); }
+
+# Referenced at C:\Users\sahil\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\86f502375d99052a9ca39bf1707048ef\res\layout\abc_expanded_menu_layout.xml:17
+-keep class android.support.v7.view.menu.ExpandedMenuView { <init>(...); }
+
+# Referenced at C:\Users\sahil\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\86f502375d99052a9ca39bf1707048ef\res\layout\abc_list_menu_item_layout.xml:17
+# Referenced at C:\Users\sahil\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\86f502375d99052a9ca39bf1707048ef\res\layout\abc_popup_menu_item_layout.xml:17
+-keep class android.support.v7.view.menu.ListMenuItemView { <init>(...); }
+
+# Referenced at C:\Users\sahil\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\86f502375d99052a9ca39bf1707048ef\res\layout-v26\abc_screen_toolbar.xml:27
+# Referenced at C:\Users\sahil\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\86f502375d99052a9ca39bf1707048ef\res\layout\abc_screen_toolbar.xml:27
+-keep class android.support.v7.widget.ActionBarContainer { <init>(...); }
+
+# Referenced at C:\Users\sahil\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\86f502375d99052a9ca39bf1707048ef\res\layout-v26\abc_screen_toolbar.xml:44
+# Referenced at C:\Users\sahil\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\86f502375d99052a9ca39bf1707048ef\res\layout\abc_action_mode_bar.xml:19
+# Referenced at C:\Users\sahil\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\86f502375d99052a9ca39bf1707048ef\res\layout\abc_screen_toolbar.xml:43
+-keep class android.support.v7.widget.ActionBarContextView { <init>(...); }
+
+# Referenced at C:\Users\sahil\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\86f502375d99052a9ca39bf1707048ef\res\layout-v26\abc_screen_toolbar.xml:17
+# Referenced at C:\Users\sahil\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\86f502375d99052a9ca39bf1707048ef\res\layout\abc_screen_toolbar.xml:17
+-keep class android.support.v7.widget.ActionBarOverlayLayout { <init>(...); }
+
+# Referenced at C:\Users\sahil\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\86f502375d99052a9ca39bf1707048ef\res\layout\abc_action_menu_layout.xml:17
+-keep class android.support.v7.widget.ActionMenuView { <init>(...); }
+
+# Referenced at C:\Users\sahil\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\86f502375d99052a9ca39bf1707048ef\res\layout\abc_activity_chooser_view.xml:19
+-keep class android.support.v7.widget.ActivityChooserView$InnerLayout { <init>(...); }
+
+# Referenced at C:\Users\sahil\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\86f502375d99052a9ca39bf1707048ef\res\layout\abc_alert_dialog_material.xml:18
+-keep class android.support.v7.widget.AlertDialogLayout { <init>(...); }
+
+# Referenced at D:\RTBMS 16-june\RTBMS\app\src\main\res\layout\activity_register.xml:9
+# Referenced at D:\RTBMS 16-june\RTBMS\app\src\main\res\layout\activity_register.xml:17
+-keep class android.support.v7.widget.AppCompatEditText { <init>(...); }
+
+# Referenced at D:\RTBMS 16-june\RTBMS\app\src\main\res\layout\activity_signup_user_details.xml:144
+# Referenced at D:\RTBMS 16-june\RTBMS\app\src\main\res\layout\activity_signup_user_details.xml:167
+# Referenced at D:\RTBMS 16-june\RTBMS\app\src\main\res\layout\activity_signup_user_details.xml:188
+# Referenced at D:\RTBMS 16-june\RTBMS\app\src\main\res\layout\activity_signup_user_details.xml:207
+-keep class android.support.v7.widget.AppCompatSpinner { <init>(...); }
+
+# Referenced at C:\Users\sahil\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\86f502375d99052a9ca39bf1707048ef\res\layout-watch-v20\abc_alert_dialog_button_bar_material.xml:18
+# Referenced at C:\Users\sahil\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\86f502375d99052a9ca39bf1707048ef\res\layout\abc_alert_dialog_button_bar_material.xml:26
+-keep class android.support.v7.widget.ButtonBarLayout { <init>(...); }
+
+# Referenced at D:\RTBMS 16-june\RTBMS\app\src\main\res\layout\activity_detail_hospital.xml:38
+# Referenced at D:\RTBMS 16-june\RTBMS\app\src\main\res\layout\activity_events.xml:2
+# Referenced at D:\RTBMS 16-june\RTBMS\app\src\main\res\layout\activity_profile.xml:45
+# Referenced at D:\RTBMS 16-june\RTBMS\app\src\main\res\layout\hospital_name_recycleresult.xml:2
+# Referenced at D:\RTBMS 16-june\RTBMS\app\src\main\res\layout\newsfeed.xml:2
+-keep class android.support.v7.widget.CardView { <init>(...); }
+
+# Referenced at C:\Users\sahil\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\86f502375d99052a9ca39bf1707048ef\res\layout\abc_screen_content_include.xml:19
+-keep class android.support.v7.widget.ContentFrameLayout { <init>(...); }
+
+# Referenced at C:\Users\sahil\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\86f502375d99052a9ca39bf1707048ef\res\layout-watch-v20\abc_alert_dialog_title_material.xml:44
+# Referenced at C:\Users\sahil\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\86f502375d99052a9ca39bf1707048ef\res\layout\abc_alert_dialog_title_material.xml:45
+-keep class android.support.v7.widget.DialogTitle { <init>(...); }
+
+# Referenced at C:\Users\sahil\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\86f502375d99052a9ca39bf1707048ef\res\layout\abc_screen_simple_overlay_action_mode.xml:23
+-keep class android.support.v7.widget.FitWindowsFrameLayout { <init>(...); }
+
+# Referenced at C:\Users\sahil\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\86f502375d99052a9ca39bf1707048ef\res\layout\abc_dialog_title_material.xml:22
+# Referenced at C:\Users\sahil\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\86f502375d99052a9ca39bf1707048ef\res\layout\abc_screen_simple.xml:17
+-keep class android.support.v7.widget.FitWindowsLinearLayout { <init>(...); }
+
+# Referenced at D:\RTBMS 16-june\RTBMS\app\src\main\res\layout\activity_blood_results_hospital.xml:23
+# Referenced at D:\RTBMS 16-june\RTBMS\app\src\main\res\layout\events_recycleview.xml:26
+# Referenced at D:\RTBMS 16-june\RTBMS\app\src\main\res\layout\newsfeed_recycleview.xml:30
+-keep class android.support.v7.widget.RecyclerView { <init>(...); }
+
+# Referenced at C:\Users\sahil\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\86f502375d99052a9ca39bf1707048ef\res\layout\abc_search_view.xml:75
+-keep class android.support.v7.widget.SearchView$SearchAutoComplete { <init>(...); }
+
+# Referenced at C:\Users\sahil\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\86f502375d99052a9ca39bf1707048ef\res\layout-v26\abc_screen_toolbar.xml:37
+# Referenced at C:\Users\sahil\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\86f502375d99052a9ca39bf1707048ef\res\layout\abc_screen_toolbar.xml:36
+-keep class android.support.v7.widget.Toolbar { <init>(...); }
+
+# Referenced at C:\Users\sahil\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\86f502375d99052a9ca39bf1707048ef\res\layout\abc_screen_simple.xml:25
+# Referenced at C:\Users\sahil\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\86f502375d99052a9ca39bf1707048ef\res\layout\abc_screen_simple_overlay_action_mode.xml:32
+-keep class android.support.v7.widget.ViewStubCompat { <init>(...); }
+
+# Referenced at D:\RTBMS 16-june\RTBMS\app\src\main\res\layout\activity_blood_request.xml:2
+-keep class android.widget.RelativeLayout { <init>(...); }
+
+# Referenced at C:\Users\sahil\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\86f502375d99052a9ca39bf1707048ef\res\layout-watch-v20\abc_alert_dialog_title_material.xml:53
+# Referenced at C:\Users\sahil\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\86f502375d99052a9ca39bf1707048ef\res\layout\abc_alert_dialog_button_bar_material.xml:43
+# Referenced at C:\Users\sahil\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\86f502375d99052a9ca39bf1707048ef\res\layout\abc_alert_dialog_material.xml:52
+# Referenced at C:\Users\sahil\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\86f502375d99052a9ca39bf1707048ef\res\layout\abc_alert_dialog_material.xml:66
+# Referenced at C:\Users\sahil\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\86f502375d99052a9ca39bf1707048ef\res\layout\abc_alert_dialog_title_material.xml:56
+-keep class android.widget.Space { <init>(...); }
+
+# Referenced at D:\RTBMS 16-june\RTBMS\app\build\intermediates\manifests\full\release\AndroidManifest.xml:300
+-keep class com.crashlytics.android.CrashlyticsInitProvider { <init>(...); }
+
+# Referenced at D:\RTBMS 16-june\RTBMS\app\build\intermediates\manifests\full\release\AndroidManifest.xml:256
+-keep class com.google.android.gms.appinvite.PreviewActivity { <init>(...); }
+
+# Referenced at D:\RTBMS 16-june\RTBMS\app\build\intermediates\manifests\full\release\AndroidManifest.xml:226
+-keep class com.google.android.gms.auth.api.signin.RevocationBoundService { <init>(...); }
+
+# Referenced at D:\RTBMS 16-june\RTBMS\app\build\intermediates\manifests\full\release\AndroidManifest.xml:217
+-keep class com.google.android.gms.auth.api.signin.internal.SignInHubActivity { <init>(...); }
+
+# Referenced at D:\RTBMS 16-june\RTBMS\app\src\main\res\layout\activity_signwithgoogle.xml:68
+-keep class com.google.android.gms.common.SignInButton { <init>(...); }
+
+# Referenced at D:\RTBMS 16-june\RTBMS\app\build\intermediates\manifests\full\release\AndroidManifest.xml:295
+-keep class com.google.android.gms.common.api.GoogleApiActivity { <init>(...); }
+
+# Referenced at D:\RTBMS 16-june\RTBMS\app\src\main\res\layout\activity_get_direction.xml:6
+# Referenced at D:\RTBMS 16-june\RTBMS\app\src\main\res\layout\nearby_hospital.xml:5
+# Referenced at D:\RTBMS 16-june\RTBMS\app\src\main\res\layout\nearby_pharmacy.xml:5
+-keep class com.google.android.gms.maps.SupportMapFragment { <init>(...); }
+
+# Referenced at D:\RTBMS 16-june\RTBMS\app\build\intermediates\manifests\full\release\AndroidManifest.xml:236
+-keep class com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver { <init>(...); }
+
+# Referenced at D:\RTBMS 16-june\RTBMS\app\build\intermediates\manifests\full\release\AndroidManifest.xml:250
+-keep class com.google.android.gms.measurement.AppMeasurementJobService { <init>(...); }
+
+# Referenced at D:\RTBMS 16-june\RTBMS\app\build\intermediates\manifests\full\release\AndroidManifest.xml:231
+-keep class com.google.android.gms.measurement.AppMeasurementReceiver { <init>(...); }
+
+# Referenced at D:\RTBMS 16-june\RTBMS\app\build\intermediates\manifests\full\release\AndroidManifest.xml:246
+-keep class com.google.android.gms.measurement.AppMeasurementService { <init>(...); }
+
+# Referenced at D:\RTBMS 16-june\RTBMS\app\build\intermediates\manifests\full\release\AndroidManifest.xml:197
+-keep class com.google.firebase.auth.internal.FederatedSignInActivity { <init>(...); }
+
+# Referenced at D:\RTBMS 16-june\RTBMS\app\build\intermediates\manifests\full\release\AndroidManifest.xml:205
+-keep class com.google.firebase.components.ComponentDiscoveryService { <init>(...); }
+
+# Referenced at D:\RTBMS 16-june\RTBMS\app\build\intermediates\manifests\full\release\AndroidManifest.xml:267
+-keep class com.google.firebase.iid.FirebaseInstanceIdReceiver { <init>(...); }
+
+# Referenced at D:\RTBMS 16-june\RTBMS\app\build\intermediates\manifests\full\release\AndroidManifest.xml:281
+-keep class com.google.firebase.iid.FirebaseInstanceIdService { <init>(...); }
+
+# Referenced at D:\RTBMS 16-june\RTBMS\app\build\intermediates\manifests\full\release\AndroidManifest.xml:189
+-keep class com.google.firebase.messaging.FirebaseMessagingService { <init>(...); }
+
+# Referenced at D:\RTBMS 16-june\RTBMS\app\build\intermediates\manifests\full\release\AndroidManifest.xml:289
+-keep class com.google.firebase.provider.FirebaseInitProvider { <init>(...); }
+
+# Referenced at D:\RTBMS 16-june\RTBMS\app\src\main\res\layout\activity_profile.xml:27
+-keep class de.hdodenhof.circleimageview.CircleImageView { <init>(...); }
+
+# Referenced at D:\RTBMS 16-june\RTBMS\app\src\main\res\layout\activity_does.xml:37
+# Referenced at D:\RTBMS 16-june\RTBMS\app\src\main\res\layout\activity_does.xml:60
+# Referenced at D:\RTBMS 16-june\RTBMS\app\src\main\res\layout\activity_does.xml:74
+-keep class me.biubiubiu.justifytext.library.JustifyTextView { <init>(...); }
+
+# Referenced at D:\RTBMS 16-june\RTBMS\app\build\intermediates\manifests\full\release\AndroidManifest.xml:120
+-keep class rtbms.terxlabs.com.Detail_Hospital { <init>(...); }
+
+# Referenced at D:\RTBMS 16-june\RTBMS\app\build\intermediates\manifests\full\release\AndroidManifest.xml:115
+-keep class rtbms.terxlabs.com.GetDirection_Activity { <init>(...); }
+
+# Referenced at D:\RTBMS 16-june\RTBMS\app\build\intermediates\manifests\full\release\AndroidManifest.xml:58
+-keep class rtbms.terxlabs.com.MainMenu { <init>(...); }
+
+# Referenced at D:\RTBMS 16-june\RTBMS\app\build\intermediates\manifests\full\release\AndroidManifest.xml:110
+-keep class rtbms.terxlabs.com.NewsFeed { <init>(...); }
+
+# Referenced at D:\RTBMS 16-june\RTBMS\app\build\intermediates\manifests\full\release\AndroidManifest.xml:154
+-keep class rtbms.terxlabs.com.Profile { <init>(...); }
+
+# Referenced at D:\RTBMS 16-june\RTBMS\app\build\intermediates\manifests\full\release\AndroidManifest.xml:39
+-keep class rtbms.terxlabs.com.SplashScreen { <init>(...); }
+
+# Referenced at D:\RTBMS 16-june\RTBMS\app\build\intermediates\manifests\full\release\AndroidManifest.xml:65
+-keep class rtbms.terxlabs.com.WelcomeActivity { <init>(...); }
+
+# Referenced at D:\RTBMS 16-june\RTBMS\app\build\intermediates\manifests\full\release\AndroidManifest.xml:98
+-keep class rtbms.terxlabs.com.aboutus { <init>(...); }
+
+# Referenced at D:\RTBMS 16-june\RTBMS\app\build\intermediates\manifests\full\release\AndroidManifest.xml:74
+-keep class rtbms.terxlabs.com.blood_request { <init>(...); }
+
+# Referenced at D:\RTBMS 16-june\RTBMS\app\build\intermediates\manifests\full\release\AndroidManifest.xml:61
+-keep class rtbms.terxlabs.com.blood_results_hospital { <init>(...); }
+
+# Referenced at D:\RTBMS 16-june\RTBMS\app\build\intermediates\manifests\full\release\AndroidManifest.xml:104
+-keep class rtbms.terxlabs.com.does { <init>(...); }
+
+# Referenced at D:\RTBMS 16-june\RTBMS\app\build\intermediates\manifests\full\release\AndroidManifest.xml:80
+-keep class rtbms.terxlabs.com.events { <init>(...); }
+
+# Referenced at D:\RTBMS 16-june\RTBMS\app\build\intermediates\manifests\full\release\AndroidManifest.xml:92
+-keep class rtbms.terxlabs.com.feedback { <init>(...); }
+
+# Referenced at D:\RTBMS 16-june\RTBMS\app\build\intermediates\manifests\full\release\AndroidManifest.xml:177
+-keep class rtbms.terxlabs.com.googlenearbyplaces.nearby_hospital { <init>(...); }
+
+# Referenced at D:\RTBMS 16-june\RTBMS\app\build\intermediates\manifests\full\release\AndroidManifest.xml:181
+-keep class rtbms.terxlabs.com.googlenearbyplaces.nearby_pharmacy { <init>(...); }
+
+# Referenced at D:\RTBMS 16-june\RTBMS\app\build\intermediates\manifests\full\release\AndroidManifest.xml:160
+-keep class rtbms.terxlabs.com.hospital_result_notfound { <init>(...); }
+
+# Referenced at D:\RTBMS 16-june\RTBMS\app\build\intermediates\manifests\full\release\AndroidManifest.xml:133
+-keep class rtbms.terxlabs.com.notifications.Firebase_messaging_service { <init>(...); }
+
+# Referenced at D:\RTBMS 16-june\RTBMS\app\build\intermediates\manifests\full\release\AndroidManifest.xml:138
+-keep class rtbms.terxlabs.com.notifications.MyfirebaseinstanceIdService { <init>(...); }
+
+# Referenced at D:\RTBMS 16-june\RTBMS\app\build\intermediates\manifests\full\release\AndroidManifest.xml:176
+-keep class rtbms.terxlabs.com.notifications.Notification { <init>(...); }
+
+# Referenced at D:\RTBMS 16-june\RTBMS\app\build\intermediates\manifests\full\release\AndroidManifest.xml:52
+-keep class rtbms.terxlabs.com.phone_otp_success { <init>(...); }
+
+# Referenced at D:\RTBMS 16-june\RTBMS\app\build\intermediates\manifests\full\release\AndroidManifest.xml:69
+-keep class rtbms.terxlabs.com.register { <init>(...); }
+
+# Referenced at D:\RTBMS 16-june\RTBMS\app\build\intermediates\manifests\full\release\AndroidManifest.xml:86
+-keep class rtbms.terxlabs.com.science { <init>(...); }
+
+# Referenced at D:\RTBMS 16-june\RTBMS\app\build\intermediates\manifests\full\release\AndroidManifest.xml:49
+-keep class rtbms.terxlabs.com.signup_user_details { <init>(...); }
+
+# Referenced at D:\RTBMS 16-june\RTBMS\app\build\intermediates\manifests\full\release\AndroidManifest.xml:55
+-keep class rtbms.terxlabs.com.signwithgoogle { <init>(...); }
+

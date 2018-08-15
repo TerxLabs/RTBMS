@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+
+    tools:context=".signup_user_details">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/activity_horizontal_margin">
+
+
+            <ImageView
+                android:layout_width="@dimen/logo_w_h"
+                android:layout_height="@dimen/logo_w_h"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="30dp"
+                android:src="@drawable/logo" />
+
+
+                <EditText
+                    android:id="@+id/signup_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:fontFamily="@font/signika_light"
+                    android:hint="Name"
+                    android:inputType="textEmailAddress"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textColor="@android:color/black" />
+
+
+
+                <EditText
+                    android:id="@+id/signup_age"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:hint="Age"
+                    android:fontFamily="@font/signika_light"
+
+                    android:inputType="number"
+                    android:maxLines="1"
+                    android:singleLine="true"
+
+                    android:textColor="@android:color/black" />
+
+
+
+
+                <EditText
+                    android:id="@+id/et_phone_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:hint="Contact Number"
+                    android:fontFamily="@font/signika_light"
+
+                    android:inputType="number"
+                    android:maxLines="1"
+                    android:singleLine="true"
+
+                    android:textColor="@android:color/black"
+                    tools:ignore="TextFields" />
+
+            <Button
+                android:id="@+id/button_phone_number"
+                android:fontFamily="@font/signika_light"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/btn"
+                android:text="Generate OTP"
+                android:scaleType="center"
+                android:textColor="#fff"
+                android:textStyle="bold" />
+
+
+                <EditText
+                    android:id="@+id/et_otp"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:hint="OTP"
+                    android:fontFamily="@font/signika_light"
+
+                    android:inputType="number"
+                    android:maxLines="1"
+                    android:singleLine="true"
+
+                    android:textColor="@android:color/black" />
+
+
+            <Button
+                android:id="@+id/button_resend"
+                android:fontFamily="@font/signika_light"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/btn"
+                android:text="Resend"
+                android:scaleType="center"
+                android:textColor="#fff"
+                android:textStyle="bold" />
+            <Button
+                android:id="@+id/button_phone_otp"
+                android:fontFamily="@font/signika_light"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/btn"
+                android:text="Verify"
+                android:scaleType="center"
+                android:textColor="#fff"
+                android:textStyle="bold" />
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="45dp"
+               android:textColor="#000"
+               android:layout_marginTop="10dp"
+               android:fontFamily="@font/signika_light"
+
+               android:layout_marginBottom="10dp"
+               android:text="Please enter your state"/>
+
+
+            <android.support.v7.widget.AppCompatSpinner
+                android:id="@+id/signup_state"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+
+                android:fontFamily="@font/signika_light"
+                android:layout_gravity="left"
+                android:entries="@array/india_states"
+                tools:ignore="RtlHardcoded" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+
+                android:textColor="#000"
+                android:fontFamily="@font/signika_light"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="Please enter your City"/>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <android.support.v7.widget.AppCompatSpinner
+                    android:id="@+id/sign_up_city"
+                    android:layout_height="45dp"
+                    android:fontFamily="@font/signika_light"
+
+                   android:layout_width="match_parent"
+
+                    android:layout_gravity="left"
+
+                    tools:ignore="RtlHardcoded" />
+
+            </android.support.design.widget.TextInputLayout>
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="35dp"
+    android:textColor="#000"
+    android:fontFamily="@font/signika_light"
+
+    android:layout_marginTop="15dp"
+    android:layout_marginBottom="10dp"
+    android:text="Please enter your blood group"/>
+            <android.support.v7.widget.AppCompatSpinner
+                android:id="@+id/signup_blood_group"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+
+                android:fontFamily="@font/signika_light"
+                android:layout_gravity="right"
+
+                android:entries="@array/SelectBloodGroup" />
+
+    <TextView
+            android:layout_width="wrap_content"
+        android:layout_height="35dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp"
+        android:fontFamily="@font/signika_light"
+
+    android:textColor="#000"
+    android:text="Gender"/>
+            <android.support.v7.widget.AppCompatSpinner
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:id="@+id/signup_gender"
+
+                android:fontFamily="@font/signika_light"
+                android:entries="@array/gender" />
+
+            <Button
+                android:id="@+id/sign_up_button"
+                android:fontFamily="@font/signika_light"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_marginTop="16dp"
+              android:background="@drawable/btn"
+                android:text="@string/action_sign_in_short"
+                android:scaleType="center"
+                android:textColor="#fff"
+                android:textStyle="bold" />
+
+            <!-- Link to Login Screen -->
+
+        </LinearLayout>
+    </ScrollView>
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center|bottom"
+        android:layout_marginBottom="20dp"
+        android:visibility="gone" />
+</android.support.design.widget.CoordinatorLayout>

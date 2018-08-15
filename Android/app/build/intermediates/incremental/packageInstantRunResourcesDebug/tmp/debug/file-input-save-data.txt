@@ -1,0 +1,7 @@
+#Internal package file, do not edit.
+#Tue Jul 10 20:03:05 IST 2018
+0.baseType=DIRECTORY
+0.base=D\:\\RTBMS 16-june\\RTBMS\\app\\build\\intermediates\\assets\\debug
+0.path=crashlytics-build.properties
+0.set=ASSET
+count=1

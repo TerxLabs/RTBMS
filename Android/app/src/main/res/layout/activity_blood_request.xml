@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/Theme.AppCompat"
+    >
+
+    <Spinner
+        android:id="@+id/spinnerState"
+        android:layout_width="match_parent"
+        android:layout_height="37dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="101dp"
+        android:fontFamily="@font/signika_light"
+
+        android:entries="@array/india_states"
+        android:gravity="center"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/spinnerCity"
+        tools:layout_editor_absoluteX="8dp" />
+
+    <Spinner
+        android:id="@+id/spinnerCity"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_alignParentTop="true"
+        android:fontFamily="@font/signika_light"
+        android:layout_marginTop="192dp"
+        android:gravity="center"
+
+        android:textAlignment="center"
+      android:splitMotionEvents="true"
+        app:layout_constraintBottom_toTopOf="@+id/spinnerBlood"
+        tools:layout_editor_absoluteX="8dp" />
+
+    <Spinner
+        android:id="@+id/spinnerBlood"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="294dp"
+        android:fontFamily="@font/signika_light"
+        android:entries="@array/SelectBloodGroup"
+        android:gravity="center"
+        android:spinnerMode="dialog"
+
+        android:splitMotionEvents="true"
+        android:textAlignment="center"
+        android:textDirection="locale"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="151dp" />
+
+    <ImageButton
+        android:id="@+id/request"
+        android:layout_width="256dp"
+        android:layout_height="43dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="31dp"
+        android:background="@drawable/hospital_search"
+        android:scaleType="centerCrop"
+
+
+        android:textColor="#000" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:fontFamily="@font/signika_light"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="71dp"
+        android:text="Enter your Current State"
+        android:textAllCaps="true"
+        android:textColor="#000"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="160dp"
+        android:text="District"
+        android:textAllCaps="true"
+
+        android:textColor="#000"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:textColor="#000"
+        android:fontFamily="@font/signika_light"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+
+        android:layout_marginTop="245dp"
+        android:text="Blood Group"
+        android:textAllCaps="true"
+        android:textStyle="bold" />
+
+
+</android.widget.RelativeLayout>

@@ -1,0 +1,4 @@
+#Tue Jul 10 19:27:52 IST 2018
+base.0=D\:\\RTBMS 16-june\\RTBMS\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\95
+path.0=classes.dex
+renamed.0=classes.dex

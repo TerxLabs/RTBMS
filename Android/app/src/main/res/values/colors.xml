@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#fff</color>
+    <color name="colorPrimaryDark">#D50000</color>
+    <color name="colorAccent">#EF5350</color>
+
+    <!-- Screens background color-->
+    <color name="bg_screen1">#efe53835</color>
+    <color name="bg_screen2">#198ed2</color>
+    <color name="bg_screen3">#ee27b04c</color>
+    <color name="bg_screen4">#ffb700</color>
+
+    <!-- dots inactive colors -->
+    <color name="dot_dark_screen1">#D50000</color>
+    <color name="dot_dark_screen2">#1565C0</color>
+    <color name="dot_dark_screen3">#8e24aa</color>
+    <color name="dot_dark_screen4">#FF8F00</color>
+
+    <!-- dots active colors -->
+    <color name="dot_light_screen1">#F44336</color>
+    <color name="dot_light_screen2">#1e88e5</color>
+    <color name="dot_light_screen3">#AB47BC</color>
+    <color name="dot_light_screen4">#161515</color>
+
+    <array name="array_dot_active">
+        <item>@color/dot_light_screen1</item>
+        <item>@color/dot_light_screen2</item>
+        <item>@color/dot_light_screen3</item>
+        <item>@color/dot_light_screen4</item>
+    </array>
+<color name="blue">#00B0FF</color>
+    <array name="array_dot_inactive">
+        <item>@color/dot_dark_screen1</item>
+        <item>@color/dot_dark_screen2</item>
+        <item>@color/dot_dark_screen3</item>
+        <item>@color/dot_dark_screen4</item>
+    </array>
+    <color name="colorRouteLine">#0A8F08</color>
+    <color name="bg_login">#26ae90</color>
+    <color name="bg_register">#2e3237</color>
+    <color name="bg_main">#428bca</color>
+    <color name="white">#ffffff</color>
+    <color name="input_login">#222222</color>
+    <color name="input_login_hint">#999999</color>
+    <color name="input_register">#888888</color>
+    <color name="input_register_bg">#3b4148</color>
+    <color name="input_register_hint">#5e6266</color>
+    <color name="btn_login">#26ae90</color>
+    <color name="btn_login_bg">#eceef1</color>
+    <color name="lbl_name">#333333</color>
+    <color name="btn_logut_bg">#ff6861</color>
+    <color name="background_material_light">#ff3c3c</color>
+</resources>
